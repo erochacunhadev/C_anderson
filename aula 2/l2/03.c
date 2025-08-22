@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * Whoa! this IDE rocks!
- */
+int main() {
+    int linhas, colunas;
 
-int main(void)
-{
-    const long int zap = 42l;
+    printf("Linhas: ");
+    scanf("%d", &linhas);
 
-    int jane, row;
-    double zop;
+    printf("Colunas: ");
+    scanf("%d", &colunas);
 
-    return EXIT_SUCCESS; // everything ok
+    int **matriz = (int**)malloc(linhas * sizeof(int*));
+    for(int i = 0; i < linhas; i++) {
+        matriz[i] = (int*)malloc(colunas * sizeof(int));
+    }
 }

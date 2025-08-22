@@ -9,7 +9,7 @@ int main() {
     if (array == NULL) {
         printf("Erro: memoria insuficiente.\n");
         return 1;
-    }
+    } //se o malloc n conseguir a memoria, o array vai estar null e o programa finaliza
 
     for (int i = 0; i < n; i++) {
         array[i] = i * 2;
